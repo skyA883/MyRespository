@@ -19,6 +19,8 @@
 		B63BAFD318D5B8D000F278F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63BAFBB18D5B8D000F278F4 /* UIKit.framework */; };
 		B63BAFDB18D5B8D000F278F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B63BAFD918D5B8D000F278F4 /* InfoPlist.strings */; };
 		B63BAFDD18D5B8D000F278F4 /* TestGitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BAFDC18D5B8D000F278F4 /* TestGitTests.m */; };
+		B63BAFE818D5BAAE00F278F4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BAFE718D5BAAE00F278F4 /* Person.m */; };
+		B63BB02918D5C41100F278F4 /* Sutdent.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BB02818D5C41100F278F4 /* Sutdent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		B63BAFD818D5B8D000F278F4 /* TestGitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestGitTests-Info.plist"; sourceTree = "<group>"; };
 		B63BAFDA18D5B8D000F278F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B63BAFDC18D5B8D000F278F4 /* TestGitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGitTests.m; sourceTree = "<group>"; };
+		B63BAFE618D5BAAE00F278F4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B63BAFE718D5BAAE00F278F4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B63BB02718D5C41100F278F4 /* Sutdent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sutdent.h; sourceTree = "<group>"; };
+		B63BB02818D5C41100F278F4 /* Sutdent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sutdent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,10 @@
 				B63BAFC718D5B8D000F278F4 /* AppDelegate.m */,
 				B63BAFC918D5B8D000F278F4 /* Images.xcassets */,
 				B63BAFBE18D5B8D000F278F4 /* Supporting Files */,
+				B63BAFE618D5BAAE00F278F4 /* Person.h */,
+				B63BAFE718D5BAAE00F278F4 /* Person.m */,
+				B63BB02718D5C41100F278F4 /* Sutdent.h */,
+				B63BB02818D5C41100F278F4 /* Sutdent.m */,
 			);
 			path = TestGit;
 			sourceTree = "<group>";
@@ -239,8 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63BAFE818D5BAAE00F278F4 /* Person.m in Sources */,
 				B63BAFC818D5B8D000F278F4 /* AppDelegate.m in Sources */,
 				B63BAFC418D5B8D000F278F4 /* main.m in Sources */,
+				B63BB02918D5C41100F278F4 /* Sutdent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +453,7 @@
 				B63BAFE218D5B8D000F278F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B63BAFE318D5B8D000F278F4 /* Build configuration list for PBXNativeTarget "TestGitTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +462,7 @@
 				B63BAFE518D5B8D000F278F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
