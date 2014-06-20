@@ -10,4 +10,8 @@
 
 @implementation Sutdent
 
+-(void)sayHi
+{
+    NSLog(@"999999");
+}
 @end
