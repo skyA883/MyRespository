@@ -21,6 +21,7 @@
 		B63BAFDD18D5B8D000F278F4 /* TestGitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BAFDC18D5B8D000F278F4 /* TestGitTests.m */; };
 		B63BAFE818D5BAAE00F278F4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BAFE718D5BAAE00F278F4 /* Person.m */; };
 		B63BB02918D5C41100F278F4 /* Sutdent.m in Sources */ = {isa = PBXBuildFile; fileRef = B63BB02818D5C41100F278F4 /* Sutdent.m */; };
+		D35A2D6B19548CB3003A3D69 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = D35A2D6A19548CB3003A3D69 /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		B63BAFE718D5BAAE00F278F4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		B63BB02718D5C41100F278F4 /* Sutdent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sutdent.h; sourceTree = "<group>"; };
 		B63BB02818D5C41100F278F4 /* Sutdent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sutdent.m; sourceTree = "<group>"; };
+		D35A2D6919548CB3003A3D69 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		D35A2D6A19548CB3003A3D69 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				B63BAFE718D5BAAE00F278F4 /* Person.m */,
 				B63BB02718D5C41100F278F4 /* Sutdent.h */,
 				B63BB02818D5C41100F278F4 /* Sutdent.m */,
+				D35A2D6919548CB3003A3D69 /* Test.h */,
+				D35A2D6A19548CB3003A3D69 /* Test.m */,
 			);
 			path = TestGit;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35A2D6B19548CB3003A3D69 /* Test.m in Sources */,
 				B63BAFE818D5BAAE00F278F4 /* Person.m in Sources */,
 				B63BAFC818D5B8D000F278F4 /* AppDelegate.m in Sources */,
 				B63BAFC418D5B8D000F278F4 /* main.m in Sources */,
