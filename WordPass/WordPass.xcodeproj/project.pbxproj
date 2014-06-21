@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3420CB6194F128B005FB1FE /* WPNavgationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3420CB5194F128B005FB1FE /* WPNavgationVC.m */; };
+		D3420CB8194F1536005FB1FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3420CB7194F1536005FB1FE /* QuartzCore.framework */; };
+		D3A10134195091AE005B0512 /* WPWordListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A10133195091AE005B0512 /* WPWordListCell.m */; };
+		D3A1013A1950A030005B0512 /* WPCellEditOptionButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A101391950A030005B0512 /* WPCellEditOptionButtonView.m */; };
+		D3A101431952B359005B0512 /* WPWordListTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A101421952B359005B0512 /* WPWordListTable.m */; };
+		D3EADAB2194E00D800BE5782 /* WPTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EADAB1194E00D800BE5782 /* WPTopBarView.m */; };
+		D3EADAB9194E81CF00BE5782 /* WPPageMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EADAB8194E81CF00BE5782 /* WPPageMenuButton.m */; };
+		D3EADAD8194E86D900BE5782 /* btn_add.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADABB194E86D900BE5782 /* btn_add.png */; };
+		D3EADAD9194E86D900BE5782 /* btn_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADABC194E86D900BE5782 /* btn_add@2x.png */; };
+		D3EADADA194E86D900BE5782 /* btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADABD194E86D900BE5782 /* btn_back.png */; };
+		D3EADADB194E86D900BE5782 /* btn_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADABE194E86D900BE5782 /* btn_back@2x.png */; };
+		D3EADADC194E86D900BE5782 /* btn_forget.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADABF194E86D900BE5782 /* btn_forget.png */; };
+		D3EADADD194E86D900BE5782 /* btn_forget@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAC0194E86D900BE5782 /* btn_forget@2x.png */; };
+		D3EADADE194E86D900BE5782 /* btn_pass.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAC1194E86D900BE5782 /* btn_pass.png */; };
+		D3EADADF194E86D900BE5782 /* btn_pass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAC2194E86D900BE5782 /* btn_pass@2x.png */; };
+		D3EADAE0194E86D900BE5782 /* btn_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAC3194E86D900BE5782 /* btn_setting.png */; };
+		D3EADAE1194E86D900BE5782 /* btn_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAC4194E86D900BE5782 /* btn_setting@2x.png */; };
+		D3EADAE2194E86D900BE5782 /* nav_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAC5194E86D900BE5782 /* nav_bar.png */; };
+		D3EADAE3194E86D900BE5782 /* teb_1st.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAC6194E86D900BE5782 /* teb_1st.png */; };
+		D3EADAE4194E86D900BE5782 /* teb_1st@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAC7194E86D900BE5782 /* teb_1st@2x.png */; };
+		D3EADAE5194E86D900BE5782 /* teb_1st_s.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAC8194E86D900BE5782 /* teb_1st_s.png */; };
+		D3EADAE6194E86D900BE5782 /* teb_1st_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAC9194E86D900BE5782 /* teb_1st_s@2x.png */; };
+		D3EADAE7194E86D900BE5782 /* teb_2st.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADACA194E86D900BE5782 /* teb_2st.png */; };
+		D3EADAE8194E86D900BE5782 /* teb_2st@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADACB194E86D900BE5782 /* teb_2st@2x.png */; };
+		D3EADAE9194E86D900BE5782 /* teb_2st_s.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADACC194E86D900BE5782 /* teb_2st_s.png */; };
+		D3EADAEA194E86D900BE5782 /* teb_2st_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADACD194E86D900BE5782 /* teb_2st_s@2x.png */; };
+		D3EADAEB194E86D900BE5782 /* teb_3st.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADACE194E86D900BE5782 /* teb_3st.png */; };
+		D3EADAEC194E86D900BE5782 /* teb_3st@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADACF194E86D900BE5782 /* teb_3st@2x.png */; };
+		D3EADAED194E86D900BE5782 /* teb_3st_s.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAD0194E86D900BE5782 /* teb_3st_s.png */; };
+		D3EADAEE194E86D900BE5782 /* teb_3st_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAD1194E86D900BE5782 /* teb_3st_s@2x.png */; };
+		D3EADAEF194E86D900BE5782 /* teb_4st.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAD2194E86D900BE5782 /* teb_4st.png */; };
+		D3EADAF0194E86D900BE5782 /* teb_4st@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAD3194E86D900BE5782 /* teb_4st@2x.png */; };
+		D3EADAF1194E86D900BE5782 /* teb_4st_s.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAD4194E86D900BE5782 /* teb_4st_s.png */; };
+		D3EADAF2194E86D900BE5782 /* teb_4st_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAD5194E86D900BE5782 /* teb_4st_s@2x.png */; };
+		D3EADAF3194E86D900BE5782 /* word_pass.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAD6194E86D900BE5782 /* word_pass.png */; };
+		D3EADAF4194E86D900BE5782 /* word_pass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EADAD7194E86D900BE5782 /* word_pass@2x.png */; };
+		D3F3F6BB194D83BC00E3851F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F3F6BA194D83BC00E3851F /* Foundation.framework */; };
+		D3F3F6BD194D83BC00E3851F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F3F6BC194D83BC00E3851F /* CoreGraphics.framework */; };
+		D3F3F6BF194D83BC00E3851F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F3F6BE194D83BC00E3851F /* UIKit.framework */; };
+		D3F3F6C5194D83BC00E3851F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3F3F6C3194D83BC00E3851F /* InfoPlist.strings */; };
+		D3F3F6C7194D83BC00E3851F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F6C6194D83BC00E3851F /* main.m */; };
+		D3F3F6CB194D83BC00E3851F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F6CA194D83BC00E3851F /* AppDelegate.m */; };
+		D3F3F6CD194D83BC00E3851F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F3F6CC194D83BC00E3851F /* Images.xcassets */; };
+		D3F3F6D4194D83BC00E3851F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F3F6D3194D83BC00E3851F /* XCTest.framework */; };
+		D3F3F6D5194D83BC00E3851F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F3F6BA194D83BC00E3851F /* Foundation.framework */; };
+		D3F3F6D6194D83BC00E3851F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F3F6BE194D83BC00E3851F /* UIKit.framework */; };
+		D3F3F6DE194D83BC00E3851F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3F3F6DC194D83BC00E3851F /* InfoPlist.strings */; };
+		D3F3F6E0194D83BC00E3851F /* WordPassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F6DF194D83BC00E3851F /* WordPassTests.m */; };
+		D3F3F6F5194D88E100E3851F /* WPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F6F4194D88E100E3851F /* WPMainViewController.m */; };
+		D3F3F6F8194D892400E3851F /* WPCommonWordListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F6F7194D892400E3851F /* WPCommonWordListVC.m */; };
+		D3F3F6FD194D908900E3851F /* WPFirstWordListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F6FC194D908900E3851F /* WPFirstWordListVC.m */; };
+		D3F3F700194D90A100E3851F /* WPSecondWordListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F6FF194D90A100E3851F /* WPSecondWordListVC.m */; };
+		D3F3F703194D90B800E3851F /* WPThirdWordListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F702194D90B800E3851F /* WPThirdWordListVC.m */; };
+		D3F3F706194D90DA00E3851F /* WPFifthWordListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F705194D90DA00E3851F /* WPFifthWordListVC.m */; };
+		D3F3F709194D90EF00E3851F /* WPSixthWordListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F708194D90EF00E3851F /* WPSixthWordListVC.m */; };
+		D3F3F70C194D912400E3851F /* WPSeventhWordListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F70B194D912400E3851F /* WPSeventhWordListVC.m */; };
+		D3F3F710194D92FC00E3851F /* WPWordInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F70F194D92FC00E3851F /* WPWordInfo.m */; };
+		D3F3F713194D954A00E3851F /* WPFourthWordListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F712194D954A00E3851F /* WPFourthWordListVC.m */; };
+		D3F3F717194DA59700E3851F /* WPPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F716194DA59700E3851F /* WPPageMenu.m */; };
+		D3F3F71A194DD27B00E3851F /* WPSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F719194DD27B00E3851F /* WPSettingVC.m */; };
+		D3F3F71D194DD2A400E3851F /* WPAddWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F71C194DD2A400E3851F /* WPAddWordVC.m */; };
+		D3F3F724194DD5E400E3851F /* NSString+External.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F3F723194DD5E400E3851F /* NSString+External.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3F3F6D7194D83BC00E3851F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3F3F6AF194D83BC00E3851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3F3F6B6194D83BC00E3851F;
+			remoteInfo = WordPass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3420CB4194F128B005FB1FE /* WPNavgationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPNavgationVC.h; sourceTree = "<group>"; };
+		D3420CB5194F128B005FB1FE /* WPNavgationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPNavgationVC.m; sourceTree = "<group>"; };
+		D3420CB7194F1536005FB1FE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D3A10132195091AE005B0512 /* WPWordListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPWordListCell.h; sourceTree = "<group>"; };
+		D3A10133195091AE005B0512 /* WPWordListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWordListCell.m; sourceTree = "<group>"; };
+		D3A101381950A030005B0512 /* WPCellEditOptionButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPCellEditOptionButtonView.h; sourceTree = "<group>"; };
+		D3A101391950A030005B0512 /* WPCellEditOptionButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPCellEditOptionButtonView.m; sourceTree = "<group>"; };
+		D3A101411952B359005B0512 /* WPWordListTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPWordListTable.h; sourceTree = "<group>"; };
+		D3A101421952B359005B0512 /* WPWordListTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWordListTable.m; sourceTree = "<group>"; };
+		D3EADAB0194E00D800BE5782 /* WPTopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTopBarView.h; sourceTree = "<group>"; };
+		D3EADAB1194E00D800BE5782 /* WPTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTopBarView.m; sourceTree = "<group>"; };
+		D3EADAB7194E81CF00BE5782 /* WPPageMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPageMenuButton.h; sourceTree = "<group>"; };
+		D3EADAB8194E81CF00BE5782 /* WPPageMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPageMenuButton.m; sourceTree = "<group>"; };
+		D3EADABB194E86D900BE5782 /* btn_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_add.png; sourceTree = "<group>"; };
+		D3EADABC194E86D900BE5782 /* btn_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_add@2x.png"; sourceTree = "<group>"; };
+		D3EADABD194E86D900BE5782 /* btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_back.png; sourceTree = "<group>"; };
+		D3EADABE194E86D900BE5782 /* btn_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back@2x.png"; sourceTree = "<group>"; };
+		D3EADABF194E86D900BE5782 /* btn_forget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_forget.png; sourceTree = "<group>"; };
+		D3EADAC0194E86D900BE5782 /* btn_forget@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_forget@2x.png"; sourceTree = "<group>"; };
+		D3EADAC1194E86D900BE5782 /* btn_pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_pass.png; sourceTree = "<group>"; };
+		D3EADAC2194E86D900BE5782 /* btn_pass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_pass@2x.png"; sourceTree = "<group>"; };
+		D3EADAC3194E86D900BE5782 /* btn_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_setting.png; sourceTree = "<group>"; };
+		D3EADAC4194E86D900BE5782 /* btn_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_setting@2x.png"; sourceTree = "<group>"; };
+		D3EADAC5194E86D900BE5782 /* nav_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_bar.png; sourceTree = "<group>"; };
+		D3EADAC6194E86D900BE5782 /* teb_1st.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teb_1st.png; sourceTree = "<group>"; };
+		D3EADAC7194E86D900BE5782 /* teb_1st@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teb_1st@2x.png"; sourceTree = "<group>"; };
+		D3EADAC8194E86D900BE5782 /* teb_1st_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teb_1st_s.png; sourceTree = "<group>"; };
+		D3EADAC9194E86D900BE5782 /* teb_1st_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teb_1st_s@2x.png"; sourceTree = "<group>"; };
+		D3EADACA194E86D900BE5782 /* teb_2st.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teb_2st.png; sourceTree = "<group>"; };
+		D3EADACB194E86D900BE5782 /* teb_2st@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teb_2st@2x.png"; sourceTree = "<group>"; };
+		D3EADACC194E86D900BE5782 /* teb_2st_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teb_2st_s.png; sourceTree = "<group>"; };
+		D3EADACD194E86D900BE5782 /* teb_2st_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teb_2st_s@2x.png"; sourceTree = "<group>"; };
+		D3EADACE194E86D900BE5782 /* teb_3st.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teb_3st.png; sourceTree = "<group>"; };
+		D3EADACF194E86D900BE5782 /* teb_3st@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teb_3st@2x.png"; sourceTree = "<group>"; };
+		D3EADAD0194E86D900BE5782 /* teb_3st_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teb_3st_s.png; sourceTree = "<group>"; };
+		D3EADAD1194E86D900BE5782 /* teb_3st_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teb_3st_s@2x.png"; sourceTree = "<group>"; };
+		D3EADAD2194E86D900BE5782 /* teb_4st.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teb_4st.png; sourceTree = "<group>"; };
+		D3EADAD3194E86D900BE5782 /* teb_4st@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teb_4st@2x.png"; sourceTree = "<group>"; };
+		D3EADAD4194E86D900BE5782 /* teb_4st_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teb_4st_s.png; sourceTree = "<group>"; };
+		D3EADAD5194E86D900BE5782 /* teb_4st_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teb_4st_s@2x.png"; sourceTree = "<group>"; };
+		D3EADAD6194E86D900BE5782 /* word_pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = word_pass.png; sourceTree = "<group>"; };
+		D3EADAD7194E86D900BE5782 /* word_pass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "word_pass@2x.png"; sourceTree = "<group>"; };
+		D3F3F6B7194D83BC00E3851F /* WordPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F3F6BA194D83BC00E3851F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D3F3F6BC194D83BC00E3851F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3F3F6BE194D83BC00E3851F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3F3F6C2194D83BC00E3851F /* WordPass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordPass-Info.plist"; sourceTree = "<group>"; };
+		D3F3F6C4194D83BC00E3851F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3F3F6C6194D83BC00E3851F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3F3F6C8194D83BC00E3851F /* WordPass-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordPass-Prefix.pch"; sourceTree = "<group>"; };
+		D3F3F6C9194D83BC00E3851F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3F3F6CA194D83BC00E3851F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D3F3F6CC194D83BC00E3851F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D3F3F6D2194D83BC00E3851F /* WordPassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordPassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F3F6D3194D83BC00E3851F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D3F3F6DB194D83BC00E3851F /* WordPassTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordPassTests-Info.plist"; sourceTree = "<group>"; };
+		D3F3F6DD194D83BC00E3851F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3F3F6DF194D83BC00E3851F /* WordPassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordPassTests.m; sourceTree = "<group>"; };
+		D3F3F6F3194D88E100E3851F /* WPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPMainViewController.h; sourceTree = "<group>"; };
+		D3F3F6F4194D88E100E3851F /* WPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPMainViewController.m; sourceTree = "<group>"; };
+		D3F3F6F6194D892400E3851F /* WPCommonWordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPCommonWordListVC.h; sourceTree = "<group>"; };
+		D3F3F6F7194D892400E3851F /* WPCommonWordListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPCommonWordListVC.m; sourceTree = "<group>"; };
+		D3F3F6FA194D8B7600E3851F /* WPCommonWordListDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPCommonWordListDef.h; sourceTree = "<group>"; };
+		D3F3F6FB194D908900E3851F /* WPFirstWordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPFirstWordListVC.h; sourceTree = "<group>"; };
+		D3F3F6FC194D908900E3851F /* WPFirstWordListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPFirstWordListVC.m; sourceTree = "<group>"; };
+		D3F3F6FE194D90A100E3851F /* WPSecondWordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPSecondWordListVC.h; sourceTree = "<group>"; };
+		D3F3F6FF194D90A100E3851F /* WPSecondWordListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPSecondWordListVC.m; sourceTree = "<group>"; };
+		D3F3F701194D90B800E3851F /* WPThirdWordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPThirdWordListVC.h; sourceTree = "<group>"; };
+		D3F3F702194D90B800E3851F /* WPThirdWordListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPThirdWordListVC.m; sourceTree = "<group>"; };
+		D3F3F704194D90DA00E3851F /* WPFifthWordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPFifthWordListVC.h; sourceTree = "<group>"; };
+		D3F3F705194D90DA00E3851F /* WPFifthWordListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPFifthWordListVC.m; sourceTree = "<group>"; };
+		D3F3F707194D90EF00E3851F /* WPSixthWordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPSixthWordListVC.h; sourceTree = "<group>"; };
+		D3F3F708194D90EF00E3851F /* WPSixthWordListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPSixthWordListVC.m; sourceTree = "<group>"; };
+		D3F3F70A194D912400E3851F /* WPSeventhWordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPSeventhWordListVC.h; sourceTree = "<group>"; };
+		D3F3F70B194D912400E3851F /* WPSeventhWordListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPSeventhWordListVC.m; sourceTree = "<group>"; };
+		D3F3F70E194D92FC00E3851F /* WPWordInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPWordInfo.h; sourceTree = "<group>"; };
+		D3F3F70F194D92FC00E3851F /* WPWordInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWordInfo.m; sourceTree = "<group>"; };
+		D3F3F711194D954A00E3851F /* WPFourthWordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPFourthWordListVC.h; sourceTree = "<group>"; };
+		D3F3F712194D954A00E3851F /* WPFourthWordListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPFourthWordListVC.m; sourceTree = "<group>"; };
+		D3F3F715194DA59700E3851F /* WPPageMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPageMenu.h; sourceTree = "<group>"; };
+		D3F3F716194DA59700E3851F /* WPPageMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPageMenu.m; sourceTree = "<group>"; };
+		D3F3F718194DD27B00E3851F /* WPSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPSettingVC.h; sourceTree = "<group>"; };
+		D3F3F719194DD27B00E3851F /* WPSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPSettingVC.m; sourceTree = "<group>"; };
+		D3F3F71B194DD2A400E3851F /* WPAddWordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAddWordVC.h; sourceTree = "<group>"; };
+		D3F3F71C194DD2A400E3851F /* WPAddWordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAddWordVC.m; sourceTree = "<group>"; };
+		D3F3F722194DD5E400E3851F /* NSString+External.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+External.h"; sourceTree = "<group>"; };
+		D3F3F723194DD5E400E3851F /* NSString+External.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+External.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3F3F6B4194D83BC00E3851F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3420CB8194F1536005FB1FE /* QuartzCore.framework in Frameworks */,
+				D3F3F6BD194D83BC00E3851F /* CoreGraphics.framework in Frameworks */,
+				D3F3F6BF194D83BC00E3851F /* UIKit.framework in Frameworks */,
+				D3F3F6BB194D83BC00E3851F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F3F6CF194D83BC00E3851F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F3F6D4194D83BC00E3851F /* XCTest.framework in Frameworks */,
+				D3F3F6D6194D83BC00E3851F /* UIKit.framework in Frameworks */,
+				D3F3F6D5194D83BC00E3851F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3EADABA194E86D900BE5782 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3EADABB194E86D900BE5782 /* btn_add.png */,
+				D3EADABC194E86D900BE5782 /* btn_add@2x.png */,
+				D3EADABD194E86D900BE5782 /* btn_back.png */,
+				D3EADABE194E86D900BE5782 /* btn_back@2x.png */,
+				D3EADABF194E86D900BE5782 /* btn_forget.png */,
+				D3EADAC0194E86D900BE5782 /* btn_forget@2x.png */,
+				D3EADAC1194E86D900BE5782 /* btn_pass.png */,
+				D3EADAC2194E86D900BE5782 /* btn_pass@2x.png */,
+				D3EADAC3194E86D900BE5782 /* btn_setting.png */,
+				D3EADAC4194E86D900BE5782 /* btn_setting@2x.png */,
+				D3EADAC5194E86D900BE5782 /* nav_bar.png */,
+				D3EADAC6194E86D900BE5782 /* teb_1st.png */,
+				D3EADAC7194E86D900BE5782 /* teb_1st@2x.png */,
+				D3EADAC8194E86D900BE5782 /* teb_1st_s.png */,
+				D3EADAC9194E86D900BE5782 /* teb_1st_s@2x.png */,
+				D3EADACA194E86D900BE5782 /* teb_2st.png */,
+				D3EADACB194E86D900BE5782 /* teb_2st@2x.png */,
+				D3EADACC194E86D900BE5782 /* teb_2st_s.png */,
+				D3EADACD194E86D900BE5782 /* teb_2st_s@2x.png */,
+				D3EADACE194E86D900BE5782 /* teb_3st.png */,
+				D3EADACF194E86D900BE5782 /* teb_3st@2x.png */,
+				D3EADAD0194E86D900BE5782 /* teb_3st_s.png */,
+				D3EADAD1194E86D900BE5782 /* teb_3st_s@2x.png */,
+				D3EADAD2194E86D900BE5782 /* teb_4st.png */,
+				D3EADAD3194E86D900BE5782 /* teb_4st@2x.png */,
+				D3EADAD4194E86D900BE5782 /* teb_4st_s.png */,
+				D3EADAD5194E86D900BE5782 /* teb_4st_s@2x.png */,
+				D3EADAD6194E86D900BE5782 /* word_pass.png */,
+				D3EADAD7194E86D900BE5782 /* word_pass@2x.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		D3F3F6AE194D83BC00E3851F = {
+			isa = PBXGroup;
+			children = (
+				D3F3F6C0194D83BC00E3851F /* WordPass */,
+				D3F3F6D9194D83BC00E3851F /* WordPassTests */,
+				D3F3F6B9194D83BC00E3851F /* Frameworks */,
+				D3F3F6B8194D83BC00E3851F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3F3F6B8194D83BC00E3851F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3F3F6B7194D83BC00E3851F /* WordPass.app */,
+				D3F3F6D2194D83BC00E3851F /* WordPassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3F3F6B9194D83BC00E3851F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3420CB7194F1536005FB1FE /* QuartzCore.framework */,
+				D3F3F6BA194D83BC00E3851F /* Foundation.framework */,
+				D3F3F6BC194D83BC00E3851F /* CoreGraphics.framework */,
+				D3F3F6BE194D83BC00E3851F /* UIKit.framework */,
+				D3F3F6D3194D83BC00E3851F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3F3F6C0194D83BC00E3851F /* WordPass */ = {
+			isa = PBXGroup;
+			children = (
+				D3F3F721194DD5C000E3851F /* commonClass */,
+				D3F3F714194DA54F00E3851F /* views */,
+				D3F3F70D194D92B600E3851F /* model */,
+				D3F3F6F9194D8B4B00E3851F /* configFiles */,
+				D3F3F6F2194D88AD00E3851F /* controller */,
+				D3F3F6C9194D83BC00E3851F /* AppDelegate.h */,
+				D3F3F6CA194D83BC00E3851F /* AppDelegate.m */,
+				D3F3F6CC194D83BC00E3851F /* Images.xcassets */,
+				D3F3F6C1194D83BC00E3851F /* Supporting Files */,
+			);
+			path = WordPass;
+			sourceTree = "<group>";
+		};
+		D3F3F6C1194D83BC00E3851F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3EADABA194E86D900BE5782 /* resources */,
+				D3F3F6C2194D83BC00E3851F /* WordPass-Info.plist */,
+				D3F3F6C3194D83BC00E3851F /* InfoPlist.strings */,
+				D3F3F6C6194D83BC00E3851F /* main.m */,
+				D3F3F6C8194D83BC00E3851F /* WordPass-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3F3F6D9194D83BC00E3851F /* WordPassTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3F3F6DF194D83BC00E3851F /* WordPassTests.m */,
+				D3F3F6DA194D83BC00E3851F /* Supporting Files */,
+			);
+			path = WordPassTests;
+			sourceTree = "<group>";
+		};
+		D3F3F6DA194D83BC00E3851F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3F3F6DB194D83BC00E3851F /* WordPassTests-Info.plist */,
+				D3F3F6DC194D83BC00E3851F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3F3F6F2194D88AD00E3851F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3F3F6F3194D88E100E3851F /* WPMainViewController.h */,
+				D3F3F6F4194D88E100E3851F /* WPMainViewController.m */,
+				D3F3F6F6194D892400E3851F /* WPCommonWordListVC.h */,
+				D3F3F6F7194D892400E3851F /* WPCommonWordListVC.m */,
+				D3F3F6FB194D908900E3851F /* WPFirstWordListVC.h */,
+				D3F3F6FC194D908900E3851F /* WPFirstWordListVC.m */,
+				D3F3F6FE194D90A100E3851F /* WPSecondWordListVC.h */,
+				D3F3F6FF194D90A100E3851F /* WPSecondWordListVC.m */,
+				D3F3F701194D90B800E3851F /* WPThirdWordListVC.h */,
+				D3F3F702194D90B800E3851F /* WPThirdWordListVC.m */,
+				D3F3F711194D954A00E3851F /* WPFourthWordListVC.h */,
+				D3F3F712194D954A00E3851F /* WPFourthWordListVC.m */,
+				D3F3F704194D90DA00E3851F /* WPFifthWordListVC.h */,
+				D3F3F705194D90DA00E3851F /* WPFifthWordListVC.m */,
+				D3F3F707194D90EF00E3851F /* WPSixthWordListVC.h */,
+				D3F3F708194D90EF00E3851F /* WPSixthWordListVC.m */,
+				D3F3F70A194D912400E3851F /* WPSeventhWordListVC.h */,
+				D3F3F70B194D912400E3851F /* WPSeventhWordListVC.m */,
+				D3F3F718194DD27B00E3851F /* WPSettingVC.h */,
+				D3F3F719194DD27B00E3851F /* WPSettingVC.m */,
+				D3F3F71B194DD2A400E3851F /* WPAddWordVC.h */,
+				D3F3F71C194DD2A400E3851F /* WPAddWordVC.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		D3F3F6F9194D8B4B00E3851F /* configFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D3F3F6FA194D8B7600E3851F /* WPCommonWordListDef.h */,
+			);
+			path = configFiles;
+			sourceTree = "<group>";
+		};
+		D3F3F70D194D92B600E3851F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D3F3F70E194D92FC00E3851F /* WPWordInfo.h */,
+				D3F3F70F194D92FC00E3851F /* WPWordInfo.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D3F3F714194DA54F00E3851F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D3A101381950A030005B0512 /* WPCellEditOptionButtonView.h */,
+				D3A101391950A030005B0512 /* WPCellEditOptionButtonView.m */,
+				D3F3F715194DA59700E3851F /* WPPageMenu.h */,
+				D3F3F716194DA59700E3851F /* WPPageMenu.m */,
+				D3EADAB0194E00D800BE5782 /* WPTopBarView.h */,
+				D3EADAB1194E00D800BE5782 /* WPTopBarView.m */,
+				D3EADAB7194E81CF00BE5782 /* WPPageMenuButton.h */,
+				D3EADAB8194E81CF00BE5782 /* WPPageMenuButton.m */,
+				D3A10132195091AE005B0512 /* WPWordListCell.h */,
+				D3A10133195091AE005B0512 /* WPWordListCell.m */,
+				D3A101411952B359005B0512 /* WPWordListTable.h */,
+				D3A101421952B359005B0512 /* WPWordListTable.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D3F3F721194DD5C000E3851F /* commonClass */ = {
+			isa = PBXGroup;
+			children = (
+				D3F3F722194DD5E400E3851F /* NSString+External.h */,
+				D3F3F723194DD5E400E3851F /* NSString+External.m */,
+				D3420CB4194F128B005FB1FE /* WPNavgationVC.h */,
+				D3420CB5194F128B005FB1FE /* WPNavgationVC.m */,
+			);
+			path = commonClass;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3F3F6B6194D83BC00E3851F /* WordPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3F3F6E3194D83BC00E3851F /* Build configuration list for PBXNativeTarget "WordPass" */;
+			buildPhases = (
+				D3F3F6B3194D83BC00E3851F /* Sources */,
+				D3F3F6B4194D83BC00E3851F /* Frameworks */,
+				D3F3F6B5194D83BC00E3851F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordPass;
+			productName = WordPass;
+			productReference = D3F3F6B7194D83BC00E3851F /* WordPass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3F3F6D1194D83BC00E3851F /* WordPassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3F3F6E6194D83BC00E3851F /* Build configuration list for PBXNativeTarget "WordPassTests" */;
+			buildPhases = (
+				D3F3F6CE194D83BC00E3851F /* Sources */,
+				D3F3F6CF194D83BC00E3851F /* Frameworks */,
+				D3F3F6D0194D83BC00E3851F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3F3F6D8194D83BC00E3851F /* PBXTargetDependency */,
+			);
+			name = WordPassTests;
+			productName = WordPassTests;
+			productReference = D3F3F6D2194D83BC00E3851F /* WordPassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3F3F6AF194D83BC00E3851F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hexuan.com;
+				TargetAttributes = {
+					D3F3F6D1194D83BC00E3851F = {
+						TestTargetID = D3F3F6B6194D83BC00E3851F;
+					};
+				};
+			};
+			buildConfigurationList = D3F3F6B2194D83BC00E3851F /* Build configuration list for PBXProject "WordPass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D3F3F6AE194D83BC00E3851F;
+			productRefGroup = D3F3F6B8194D83BC00E3851F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3F3F6B6194D83BC00E3851F /* WordPass */,
+				D3F3F6D1194D83BC00E3851F /* WordPassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3F3F6B5194D83BC00E3851F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3EADAE1194E86D900BE5782 /* btn_setting@2x.png in Resources */,
+				D3EADAEC194E86D900BE5782 /* teb_3st@2x.png in Resources */,
+				D3EADADD194E86D900BE5782 /* btn_forget@2x.png in Resources */,
+				D3EADAE0194E86D900BE5782 /* btn_setting.png in Resources */,
+				D3EADAE4194E86D900BE5782 /* teb_1st@2x.png in Resources */,
+				D3EADAE5194E86D900BE5782 /* teb_1st_s.png in Resources */,
+				D3EADAF3194E86D900BE5782 /* word_pass.png in Resources */,
+				D3EADAE6194E86D900BE5782 /* teb_1st_s@2x.png in Resources */,
+				D3EADAE2194E86D900BE5782 /* nav_bar.png in Resources */,
+				D3EADAE8194E86D900BE5782 /* teb_2st@2x.png in Resources */,
+				D3EADAEA194E86D900BE5782 /* teb_2st_s@2x.png in Resources */,
+				D3EADADB194E86D900BE5782 /* btn_back@2x.png in Resources */,
+				D3EADAE9194E86D900BE5782 /* teb_2st_s.png in Resources */,
+				D3EADADF194E86D900BE5782 /* btn_pass@2x.png in Resources */,
+				D3EADADC194E86D900BE5782 /* btn_forget.png in Resources */,
+				D3EADAF2194E86D900BE5782 /* teb_4st_s@2x.png in Resources */,
+				D3EADAD8194E86D900BE5782 /* btn_add.png in Resources */,
+				D3EADAE3194E86D900BE5782 /* teb_1st.png in Resources */,
+				D3F3F6C5194D83BC00E3851F /* InfoPlist.strings in Resources */,
+				D3F3F6CD194D83BC00E3851F /* Images.xcassets in Resources */,
+				D3EADAD9194E86D900BE5782 /* btn_add@2x.png in Resources */,
+				D3EADAEB194E86D900BE5782 /* teb_3st.png in Resources */,
+				D3EADADE194E86D900BE5782 /* btn_pass.png in Resources */,
+				D3EADADA194E86D900BE5782 /* btn_back.png in Resources */,
+				D3EADAF0194E86D900BE5782 /* teb_4st@2x.png in Resources */,
+				D3EADAF1194E86D900BE5782 /* teb_4st_s.png in Resources */,
+				D3EADAEE194E86D900BE5782 /* teb_3st_s@2x.png in Resources */,
+				D3EADAF4194E86D900BE5782 /* word_pass@2x.png in Resources */,
+				D3EADAEF194E86D900BE5782 /* teb_4st.png in Resources */,
+				D3EADAED194E86D900BE5782 /* teb_3st_s.png in Resources */,
+				D3EADAE7194E86D900BE5782 /* teb_2st.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F3F6D0194D83BC00E3851F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F3F6DE194D83BC00E3851F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3F3F6B3194D83BC00E3851F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F3F6F8194D892400E3851F /* WPCommonWordListVC.m in Sources */,
+				D3A1013A1950A030005B0512 /* WPCellEditOptionButtonView.m in Sources */,
+				D3F3F70C194D912400E3851F /* WPSeventhWordListVC.m in Sources */,
+				D3F3F700194D90A100E3851F /* WPSecondWordListVC.m in Sources */,
+				D3F3F713194D954A00E3851F /* WPFourthWordListVC.m in Sources */,
+				D3EADAB2194E00D800BE5782 /* WPTopBarView.m in Sources */,
+				D3420CB6194F128B005FB1FE /* WPNavgationVC.m in Sources */,
+				D3A101431952B359005B0512 /* WPWordListTable.m in Sources */,
+				D3A10134195091AE005B0512 /* WPWordListCell.m in Sources */,
+				D3F3F724194DD5E400E3851F /* NSString+External.m in Sources */,
+				D3F3F6F5194D88E100E3851F /* WPMainViewController.m in Sources */,
+				D3F3F6CB194D83BC00E3851F /* AppDelegate.m in Sources */,
+				D3F3F6FD194D908900E3851F /* WPFirstWordListVC.m in Sources */,
+				D3F3F703194D90B800E3851F /* WPThirdWordListVC.m in Sources */,
+				D3F3F6C7194D83BC00E3851F /* main.m in Sources */,
+				D3F3F717194DA59700E3851F /* WPPageMenu.m in Sources */,
+				D3F3F71D194DD2A400E3851F /* WPAddWordVC.m in Sources */,
+				D3F3F71A194DD27B00E3851F /* WPSettingVC.m in Sources */,
+				D3F3F709194D90EF00E3851F /* WPSixthWordListVC.m in Sources */,
+				D3F3F706194D90DA00E3851F /* WPFifthWordListVC.m in Sources */,
+				D3EADAB9194E81CF00BE5782 /* WPPageMenuButton.m in Sources */,
+				D3F3F710194D92FC00E3851F /* WPWordInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F3F6CE194D83BC00E3851F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F3F6E0194D83BC00E3851F /* WordPassTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3F3F6D8194D83BC00E3851F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3F3F6B6194D83BC00E3851F /* WordPass */;
+			targetProxy = D3F3F6D7194D83BC00E3851F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3F3F6C3194D83BC00E3851F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3F3F6C4194D83BC00E3851F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D3F3F6DC194D83BC00E3851F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3F3F6DD194D83BC00E3851F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3F3F6E1194D83BC00E3851F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: LIU XUAN (3WL25FC4CN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: LIU XUAN (3WL25FC4CN)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "74ED66D2-C123-4018-84E1-B153CC4752BD";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3F3F6E2194D83BC00E3851F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "74ED66D2-C123-4018-84E1-B153CC4752BD";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3F3F6E4194D83BC00E3851F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: LIU XUAN (3WL25FC4CN)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordPass/WordPass-Prefix.pch";
+				INFOPLIST_FILE = "WordPass/WordPass-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74ED66D2-C123-4018-84E1-B153CC4752BD";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D3F3F6E5194D83BC00E3851F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordPass/WordPass-Prefix.pch";
+				INFOPLIST_FILE = "WordPass/WordPass-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74ED66D2-C123-4018-84E1-B153CC4752BD";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D3F3F6E7194D83BC00E3851F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WordPass.app/WordPass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordPass/WordPass-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WordPassTests/WordPassTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D3F3F6E8194D83BC00E3851F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WordPass.app/WordPass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordPass/WordPass-Prefix.pch";
+				INFOPLIST_FILE = "WordPassTests/WordPassTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3F3F6B2194D83BC00E3851F /* Build configuration list for PBXProject "WordPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F3F6E1194D83BC00E3851F /* Debug */,
+				D3F3F6E2194D83BC00E3851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3F3F6E3194D83BC00E3851F /* Build configuration list for PBXNativeTarget "WordPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F3F6E4194D83BC00E3851F /* Debug */,
+				D3F3F6E5194D83BC00E3851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3F3F6E6194D83BC00E3851F /* Build configuration list for PBXNativeTarget "WordPassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F3F6E7194D83BC00E3851F /* Debug */,
+				D3F3F6E8194D83BC00E3851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3F3F6AF194D83BC00E3851F /* Project object */;
+}
